@@ -17,7 +17,7 @@ jobs:
         aws-region: ap-northeast-2
     - name: Run 
       env:
-        SERVICE_NAME: 54-180-128-102
+        SERVICE_NAME: 3-35-25-36
         IMAGE_NAME: ${{ secrets.DOCKERHUB_USERNAME }}/lightsail-nginx:${{ github.sha }}
       run: |
         echo $IMAGE_NAME:$IMAGE_TAG
