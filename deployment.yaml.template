@@ -1,0 +1,9 @@
+serviceName: '3-35-25-36' # 자신의 서비스 이름으로 바꿔주세요
+containers:
+  nginx:
+    image: '${IMAGE_NAME}'
+    ports:
+      '80': 'HTTP'
+publicEndpoint:
+  containerName: 'nginx'
+  containerPort: 80
